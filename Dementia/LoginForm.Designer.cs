@@ -30,13 +30,14 @@ namespace Dementia
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.LoginField = new System.Windows.Forms.TextBox();
+            this.LoginButton = new System.Windows.Forms.Button();
             this.PassField = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.LoginButton = new System.Windows.Forms.Button();
+            this.LoginField = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.RegisterButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -44,6 +45,7 @@ namespace Dementia
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
+            this.panel1.Controls.Add(this.RegisterButton);
             this.panel1.Controls.Add(this.LoginButton);
             this.panel1.Controls.Add(this.PassField);
             this.panel1.Controls.Add(this.label4);
@@ -56,50 +58,22 @@ namespace Dementia
             this.panel1.Size = new System.Drawing.Size(444, 270);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // LoginButton
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(444, 64);
-            this.panel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.label1.Location = new System.Drawing.Point(109, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 57);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Авторизация";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(23, 94);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 28);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Логин";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // LoginField
-            // 
-            this.LoginField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
-            this.LoginField.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoginField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.LoginField.Location = new System.Drawing.Point(119, 93);
-            this.LoginField.Name = "LoginField";
-            this.LoginField.Size = new System.Drawing.Size(270, 29);
-            this.LoginField.TabIndex = 2;
+            this.LoginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            this.LoginButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LoginButton.FlatAppearance.BorderSize = 0;
+            this.LoginButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(92)))), ((int)(((byte)(88)))));
+            this.LoginButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(135)))), ((int)(((byte)(129)))));
+            this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginButton.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LoginButton.Location = new System.Drawing.Point(282, 204);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(107, 38);
+            this.LoginButton.TabIndex = 5;
+            this.LoginButton.Text = "Войти";
+            this.LoginButton.UseVisualStyleBackColor = false;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // PassField
             // 
@@ -125,22 +99,66 @@ namespace Dementia
             this.label4.Text = "Пароль";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // LoginButton
+            // LoginField
             // 
-            this.LoginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
-            this.LoginButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LoginButton.FlatAppearance.BorderSize = 0;
-            this.LoginButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(92)))), ((int)(((byte)(88)))));
-            this.LoginButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(135)))), ((int)(((byte)(129)))));
-            this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LoginButton.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoginButton.Location = new System.Drawing.Point(282, 204);
-            this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(107, 38);
-            this.LoginButton.TabIndex = 5;
-            this.LoginButton.Text = "Войти";
-            this.LoginButton.UseVisualStyleBackColor = false;
-            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
+            this.LoginField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            this.LoginField.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LoginField.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.LoginField.Location = new System.Drawing.Point(119, 93);
+            this.LoginField.Name = "LoginField";
+            this.LoginField.Size = new System.Drawing.Size(270, 29);
+            this.LoginField.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(23, 94);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 28);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Логин";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(444, 64);
+            this.panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.label1.Location = new System.Drawing.Point(109, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(247, 57);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Авторизация";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // RegisterButton
+            // 
+            this.RegisterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            this.RegisterButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RegisterButton.FlatAppearance.BorderSize = 0;
+            this.RegisterButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(92)))), ((int)(((byte)(88)))));
+            this.RegisterButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(135)))), ((int)(((byte)(129)))));
+            this.RegisterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RegisterButton.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RegisterButton.Location = new System.Drawing.Point(28, 204);
+            this.RegisterButton.Name = "RegisterButton";
+            this.RegisterButton.Size = new System.Drawing.Size(150, 38);
+            this.RegisterButton.TabIndex = 6;
+            this.RegisterButton.Text = "Регистрация";
+            this.RegisterButton.UseVisualStyleBackColor = false;
             // 
             // LoginForm
             // 
@@ -169,6 +187,7 @@ namespace Dementia
         private System.Windows.Forms.TextBox PassField;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button LoginButton;
+        private System.Windows.Forms.Button RegisterButton;
     }
 }
 
