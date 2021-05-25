@@ -22,5 +22,9 @@ namespace Dementia
         {
             Application.Exit();
         }
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            base.OnClosing(e);
+        }
     }
 }

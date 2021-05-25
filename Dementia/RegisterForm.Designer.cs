@@ -75,7 +75,7 @@ namespace Dementia
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 67);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(470, 209);
+            this.panel2.Size = new System.Drawing.Size(470, 201);
             this.panel2.TabIndex = 1;
             // 
             // RegisterButton
@@ -105,8 +105,6 @@ namespace Dementia
             this.PassField1.Size = new System.Drawing.Size(270, 29);
             this.PassField1.TabIndex = 8;
             this.PassField1.UseSystemPasswordChar = true;
-            this.PassField1.Enter += new System.EventHandler(this.PassField1_Enter);
-            this.PassField1.Leave += new System.EventHandler(this.PassField1_Leave);
             // 
             // label6
             // 
@@ -128,8 +126,6 @@ namespace Dementia
             this.LoginField1.Name = "LoginField1";
             this.LoginField1.Size = new System.Drawing.Size(270, 29);
             this.LoginField1.TabIndex = 6;
-            this.LoginField1.Enter += new System.EventHandler(this.LoginField1_Enter);
-            this.LoginField1.Leave += new System.EventHandler(this.LoginField1_Leave);
             // 
             // label5
             // 
@@ -146,11 +142,13 @@ namespace Dementia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 276);
+            this.ClientSize = new System.Drawing.Size(470, 268);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "RegisterForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Регистрация";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RegisterForm_FormClosed);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

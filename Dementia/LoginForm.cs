@@ -45,9 +45,20 @@ namespace Dementia
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(LoginField.Text))
+            {
+                MessageBox.Show("Введите логин.");
+                return;
+            }
+            if (string.IsNullOrEmpty(PassField.Text))
+            {
+                MessageBox.Show("Введите пароль.");
+                return;
+            }
             string ConnStr = @"Data Source=eleena\sqlexpress;Initial Catalog=Dementia;Integrated Security=True";
             SqlConnection dbConnection = new SqlConnection(ConnStr);
             dbConnection.Open();
+
 
             bool success = false;
             try
@@ -79,5 +90,11 @@ namespace Dementia
             }
         }
 
+        private void RegisterButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegisterForm registerform = new RegisterForm();
+            registerform.Show();
+        }
     }
 }
