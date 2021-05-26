@@ -39,12 +39,12 @@ namespace Dementia
             System.Windows.Forms.Label label3;
             System.Windows.Forms.Label label4;
             System.Windows.Forms.Label label5;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MecicalFilesForm));
             System.Windows.Forms.Label label7;
             System.Windows.Forms.Label label8;
             System.Windows.Forms.Label label11;
             System.Windows.Forms.Label label12;
             System.Windows.Forms.Label label13;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MecicalFilesForm));
             this.dementiaDataSet = new Dementia.DementiaDataSet();
             this.patientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.patientTableAdapter = new Dementia.DementiaDataSetTableAdapters.PatientTableAdapter();
@@ -76,22 +76,24 @@ namespace Dementia
             this.ButtonAna = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonDoctor = new System.Windows.Forms.Button();
+            this.numberPhoneTextBox1 = new System.Windows.Forms.TextBox();
+            this.doctorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.positionTextBox = new System.Windows.Forms.TextBox();
+            this.othernameTextBox1 = new System.Windows.Forms.TextBox();
+            this.nameTextBox2 = new System.Windows.Forms.TextBox();
+            this.surnameTextBox1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.dateDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.analyzesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.resultTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
+            this.medicalFileBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.analyzesTableAdapter = new Dementia.DementiaDataSetTableAdapters.AnalyzesTableAdapter();
-            this.label6 = new System.Windows.Forms.Label();
-            this.doctorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.doctorTableAdapter = new Dementia.DementiaDataSetTableAdapters.DoctorTableAdapter();
-            this.surnameTextBox1 = new System.Windows.Forms.TextBox();
-            this.nameTextBox2 = new System.Windows.Forms.TextBox();
-            this.othernameTextBox1 = new System.Windows.Forms.TextBox();
-            this.positionTextBox = new System.Windows.Forms.TextBox();
-            this.numberPhoneTextBox1 = new System.Windows.Forms.TextBox();
-            this.buttonDoctor = new System.Windows.Forms.Button();
+            this.medicalFileTableAdapter = new Dementia.DementiaDataSetTableAdapters.MedicalFileTableAdapter();
             othernameLabel = new System.Windows.Forms.Label();
             numberPhoneLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
@@ -112,9 +114,10 @@ namespace Dementia
             this.patientBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPatient)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.doctorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.analyzesBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.doctorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicalFileBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // othernameLabel
@@ -195,7 +198,7 @@ namespace Dementia
             label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
             label3.Font = new System.Drawing.Font("Segoe Print", 10F);
             label3.ForeColor = System.Drawing.SystemColors.Control;
-            label3.Location = new System.Drawing.Point(375, 178);
+            label3.Location = new System.Drawing.Point(681, 177);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(62, 24);
             label3.TabIndex = 56;
@@ -207,7 +210,7 @@ namespace Dementia
             label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
             label4.Font = new System.Drawing.Font("Segoe Print", 10F);
             label4.ForeColor = System.Drawing.SystemColors.Control;
-            label4.Location = new System.Drawing.Point(375, 211);
+            label4.Location = new System.Drawing.Point(681, 210);
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(94, 24);
             label4.TabIndex = 57;
@@ -219,11 +222,71 @@ namespace Dementia
             label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
             label5.Font = new System.Drawing.Font("Segoe Print", 10F);
             label5.ForeColor = System.Drawing.SystemColors.Control;
-            label5.Location = new System.Drawing.Point(375, 244);
+            label5.Location = new System.Drawing.Point(681, 243);
             label5.Name = "label5";
             label5.Size = new System.Drawing.Size(53, 24);
             label5.TabIndex = 58;
             label5.Text = "Дата";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
+            label7.Font = new System.Drawing.Font("Segoe Print", 10F);
+            label7.ForeColor = System.Drawing.SystemColors.Control;
+            label7.Location = new System.Drawing.Point(353, 292);
+            label7.Name = "label7";
+            label7.Size = new System.Drawing.Size(96, 24);
+            label7.TabIndex = 65;
+            label7.Text = "Должность";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
+            label8.Font = new System.Drawing.Font("Segoe Print", 10F);
+            label8.ForeColor = System.Drawing.SystemColors.Control;
+            label8.Location = new System.Drawing.Point(353, 174);
+            label8.Name = "label8";
+            label8.Size = new System.Drawing.Size(81, 24);
+            label8.TabIndex = 66;
+            label8.Text = "Фамилия ";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
+            label11.Font = new System.Drawing.Font("Segoe Print", 10F);
+            label11.ForeColor = System.Drawing.SystemColors.Control;
+            label11.Location = new System.Drawing.Point(353, 215);
+            label11.Name = "label11";
+            label11.Size = new System.Drawing.Size(48, 24);
+            label11.TabIndex = 67;
+            label11.Text = "Имя ";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
+            label12.Font = new System.Drawing.Font("Segoe Print", 10F);
+            label12.ForeColor = System.Drawing.SystemColors.Control;
+            label12.Location = new System.Drawing.Point(353, 251);
+            label12.Name = "label12";
+            label12.Size = new System.Drawing.Size(88, 24);
+            label12.TabIndex = 68;
+            label12.Text = "Отчество";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
+            label13.Font = new System.Drawing.Font("Segoe Print", 10F);
+            label13.ForeColor = System.Drawing.SystemColors.Control;
+            label13.Location = new System.Drawing.Point(353, 330);
+            label13.Name = "label13";
+            label13.Size = new System.Drawing.Size(70, 24);
+            label13.TabIndex = 69;
+            label13.Text = "Телефон\r\n";
             // 
             // dementiaDataSet
             // 
@@ -276,7 +339,7 @@ namespace Dementia
             this.patientBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.patientBindingNavigator.Name = "patientBindingNavigator";
             this.patientBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.patientBindingNavigator.Size = new System.Drawing.Size(1338, 25);
+            this.patientBindingNavigator.Size = new System.Drawing.Size(1071, 25);
             this.patientBindingNavigator.TabIndex = 0;
             this.patientBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -458,14 +521,14 @@ namespace Dementia
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewPatient.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
             this.dataGridViewPatient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPatient.Location = new System.Drawing.Point(16, 431);
+            this.dataGridViewPatient.Location = new System.Drawing.Point(32, 418);
             this.dataGridViewPatient.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewPatient.MultiSelect = false;
             this.dataGridViewPatient.Name = "dataGridViewPatient";
             this.dataGridViewPatient.RowHeadersWidth = 51;
             this.dataGridViewPatient.RowTemplate.Height = 24;
             this.dataGridViewPatient.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewPatient.Size = new System.Drawing.Size(979, 352);
+            this.dataGridViewPatient.Size = new System.Drawing.Size(952, 121);
             this.dataGridViewPatient.TabIndex = 14;
             this.dataGridViewPatient.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPatient_CellContentClick);
             // 
@@ -475,7 +538,7 @@ namespace Dementia
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
             this.label10.Font = new System.Drawing.Font("Segoe Print", 10F);
             this.label10.ForeColor = System.Drawing.SystemColors.Control;
-            this.label10.Location = new System.Drawing.Point(375, 307);
+            this.label10.Location = new System.Drawing.Point(681, 290);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(142, 24);
@@ -486,7 +549,7 @@ namespace Dementia
             // 
             this.textBoxCurrentPatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
             this.textBoxCurrentPatient.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxCurrentPatient.Location = new System.Drawing.Point(379, 343);
+            this.textBoxCurrentPatient.Location = new System.Drawing.Point(685, 326);
             this.textBoxCurrentPatient.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCurrentPatient.Name = "textBoxCurrentPatient";
             this.textBoxCurrentPatient.Size = new System.Drawing.Size(299, 22);
@@ -513,7 +576,7 @@ namespace Dementia
             this.ButtonAna.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(135)))), ((int)(((byte)(129)))));
             this.ButtonAna.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonAna.Font = new System.Drawing.Font("Segoe Print", 8F);
-            this.ButtonAna.Location = new System.Drawing.Point(583, 376);
+            this.ButtonAna.Location = new System.Drawing.Point(889, 359);
             this.ButtonAna.Name = "ButtonAna";
             this.ButtonAna.Size = new System.Drawing.Size(95, 25);
             this.ButtonAna.TabIndex = 50;
@@ -527,7 +590,7 @@ namespace Dementia
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
             this.label2.Font = new System.Drawing.Font("Segoe Print", 16F);
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(477, 125);
+            this.label2.Location = new System.Drawing.Point(783, 125);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(99, 38);
             this.label2.TabIndex = 51;
@@ -577,14 +640,98 @@ namespace Dementia
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 24);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1338, 785);
+            this.panel2.Size = new System.Drawing.Size(1071, 550);
             this.panel2.TabIndex = 50;
+            // 
+            // buttonDoctor
+            // 
+            this.buttonDoctor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            this.buttonDoctor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDoctor.FlatAppearance.BorderSize = 0;
+            this.buttonDoctor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(92)))), ((int)(((byte)(88)))));
+            this.buttonDoctor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(135)))), ((int)(((byte)(129)))));
+            this.buttonDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDoctor.Font = new System.Drawing.Font("Segoe Print", 8F);
+            this.buttonDoctor.Location = new System.Drawing.Point(543, 376);
+            this.buttonDoctor.Name = "buttonDoctor";
+            this.buttonDoctor.Size = new System.Drawing.Size(95, 25);
+            this.buttonDoctor.TabIndex = 70;
+            this.buttonDoctor.Text = "Сохранить";
+            this.buttonDoctor.UseVisualStyleBackColor = false;
+            this.buttonDoctor.Click += new System.EventHandler(this.buttonDoctor_Click);
+            // 
+            // numberPhoneTextBox1
+            // 
+            this.numberPhoneTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            this.numberPhoneTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.doctorBindingSource, "NumberPhone", true));
+            this.numberPhoneTextBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F);
+            this.numberPhoneTextBox1.Location = new System.Drawing.Point(459, 330);
+            this.numberPhoneTextBox1.Name = "numberPhoneTextBox1";
+            this.numberPhoneTextBox1.Size = new System.Drawing.Size(179, 22);
+            this.numberPhoneTextBox1.TabIndex = 64;
+            // 
+            // doctorBindingSource
+            // 
+            this.doctorBindingSource.DataMember = "Doctor";
+            this.doctorBindingSource.DataSource = this.dementiaDataSet;
+            // 
+            // positionTextBox
+            // 
+            this.positionTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            this.positionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.doctorBindingSource, "Position", true));
+            this.positionTextBox.Font = new System.Drawing.Font("Times New Roman", 9.75F);
+            this.positionTextBox.Location = new System.Drawing.Point(459, 292);
+            this.positionTextBox.Name = "positionTextBox";
+            this.positionTextBox.Size = new System.Drawing.Size(179, 22);
+            this.positionTextBox.TabIndex = 63;
+            // 
+            // othernameTextBox1
+            // 
+            this.othernameTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            this.othernameTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.doctorBindingSource, "Othername", true));
+            this.othernameTextBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F);
+            this.othernameTextBox1.Location = new System.Drawing.Point(459, 251);
+            this.othernameTextBox1.Name = "othernameTextBox1";
+            this.othernameTextBox1.Size = new System.Drawing.Size(179, 22);
+            this.othernameTextBox1.TabIndex = 62;
+            // 
+            // nameTextBox2
+            // 
+            this.nameTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            this.nameTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.doctorBindingSource, "Name", true));
+            this.nameTextBox2.Font = new System.Drawing.Font("Times New Roman", 9.75F);
+            this.nameTextBox2.Location = new System.Drawing.Point(459, 215);
+            this.nameTextBox2.Name = "nameTextBox2";
+            this.nameTextBox2.Size = new System.Drawing.Size(179, 22);
+            this.nameTextBox2.TabIndex = 61;
+            // 
+            // surnameTextBox1
+            // 
+            this.surnameTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            this.surnameTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.doctorBindingSource, "Surname", true));
+            this.surnameTextBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F);
+            this.surnameTextBox1.Location = new System.Drawing.Point(459, 176);
+            this.surnameTextBox1.Name = "surnameTextBox1";
+            this.surnameTextBox1.Size = new System.Drawing.Size(179, 22);
+            this.surnameTextBox1.TabIndex = 60;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
+            this.label6.Font = new System.Drawing.Font("Segoe Print", 16F);
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
+            this.label6.Location = new System.Drawing.Point(473, 125);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 38);
+            this.label6.TabIndex = 59;
+            this.label6.Text = "Врач";
             // 
             // dateDateTimePicker
             // 
             this.dateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.analyzesBindingSource, "Date", true));
             this.dateDateTimePicker.Font = new System.Drawing.Font("Times New Roman", 9.75F);
-            this.dateDateTimePicker.Location = new System.Drawing.Point(484, 246);
+            this.dateDateTimePicker.Location = new System.Drawing.Point(790, 245);
             this.dateDateTimePicker.Name = "dateDateTimePicker";
             this.dateDateTimePicker.Size = new System.Drawing.Size(194, 22);
             this.dateDateTimePicker.TabIndex = 55;
@@ -599,7 +746,7 @@ namespace Dementia
             this.resultTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
             this.resultTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.analyzesBindingSource, "Result", true));
             this.resultTextBox.Font = new System.Drawing.Font("Times New Roman", 9.75F);
-            this.resultTextBox.Location = new System.Drawing.Point(484, 215);
+            this.resultTextBox.Location = new System.Drawing.Point(790, 214);
             this.resultTextBox.Name = "resultTextBox";
             this.resultTextBox.Size = new System.Drawing.Size(194, 22);
             this.resultTextBox.TabIndex = 54;
@@ -609,7 +756,7 @@ namespace Dementia
             this.nameTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
             this.nameTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.analyzesBindingSource, "Name", true));
             this.nameTextBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F);
-            this.nameTextBox1.Location = new System.Drawing.Point(484, 176);
+            this.nameTextBox1.Location = new System.Drawing.Point(790, 175);
             this.nameTextBox1.Name = "nameTextBox1";
             this.nameTextBox1.Size = new System.Drawing.Size(194, 22);
             this.nameTextBox1.TabIndex = 53;
@@ -621,7 +768,7 @@ namespace Dementia
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1338, 122);
+            this.panel1.Size = new System.Drawing.Size(1071, 122);
             this.panel1.TabIndex = 52;
             // 
             // label9
@@ -629,175 +776,40 @@ namespace Dementia
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.label9.Location = new System.Drawing.Point(419, 49);
+            this.label9.Location = new System.Drawing.Point(392, 40);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(539, 57);
+            this.label9.Size = new System.Drawing.Size(342, 57);
             this.label9.TabIndex = 1;
-            this.label9.Text = "Медицинская карта пациента";
+            this.label9.Text = "Заполнение данных";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // medicalFileBindingSource
+            // 
+            this.medicalFileBindingSource.DataMember = "MedicalFile";
+            this.medicalFileBindingSource.DataSource = this.dementiaDataSet;
             // 
             // analyzesTableAdapter
             // 
             this.analyzesTableAdapter.ClearBeforeFill = true;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
-            this.label6.Font = new System.Drawing.Font("Segoe Print", 16F);
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(830, 125);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 38);
-            this.label6.TabIndex = 59;
-            this.label6.Text = "Врач";
-            // 
-            // doctorBindingSource
-            // 
-            this.doctorBindingSource.DataMember = "Doctor";
-            this.doctorBindingSource.DataSource = this.dementiaDataSet;
-            // 
             // doctorTableAdapter
             // 
             this.doctorTableAdapter.ClearBeforeFill = true;
             // 
-            // surnameTextBox1
+            // medicalFileTableAdapter
             // 
-            this.surnameTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
-            this.surnameTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.doctorBindingSource, "Surname", true));
-            this.surnameTextBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F);
-            this.surnameTextBox1.Location = new System.Drawing.Point(816, 176);
-            this.surnameTextBox1.Name = "surnameTextBox1";
-            this.surnameTextBox1.Size = new System.Drawing.Size(179, 22);
-            this.surnameTextBox1.TabIndex = 60;
-            // 
-            // nameTextBox2
-            // 
-            this.nameTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
-            this.nameTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.doctorBindingSource, "Name", true));
-            this.nameTextBox2.Font = new System.Drawing.Font("Times New Roman", 9.75F);
-            this.nameTextBox2.Location = new System.Drawing.Point(816, 215);
-            this.nameTextBox2.Name = "nameTextBox2";
-            this.nameTextBox2.Size = new System.Drawing.Size(179, 22);
-            this.nameTextBox2.TabIndex = 61;
-            // 
-            // othernameTextBox1
-            // 
-            this.othernameTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
-            this.othernameTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.doctorBindingSource, "Othername", true));
-            this.othernameTextBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F);
-            this.othernameTextBox1.Location = new System.Drawing.Point(816, 251);
-            this.othernameTextBox1.Name = "othernameTextBox1";
-            this.othernameTextBox1.Size = new System.Drawing.Size(179, 22);
-            this.othernameTextBox1.TabIndex = 62;
-            // 
-            // positionTextBox
-            // 
-            this.positionTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
-            this.positionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.doctorBindingSource, "Position", true));
-            this.positionTextBox.Font = new System.Drawing.Font("Times New Roman", 9.75F);
-            this.positionTextBox.Location = new System.Drawing.Point(816, 292);
-            this.positionTextBox.Name = "positionTextBox";
-            this.positionTextBox.Size = new System.Drawing.Size(179, 22);
-            this.positionTextBox.TabIndex = 63;
-            // 
-            // numberPhoneTextBox1
-            // 
-            this.numberPhoneTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
-            this.numberPhoneTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.doctorBindingSource, "NumberPhone", true));
-            this.numberPhoneTextBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F);
-            this.numberPhoneTextBox1.Location = new System.Drawing.Point(816, 330);
-            this.numberPhoneTextBox1.Name = "numberPhoneTextBox1";
-            this.numberPhoneTextBox1.Size = new System.Drawing.Size(179, 22);
-            this.numberPhoneTextBox1.TabIndex = 64;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
-            label7.Font = new System.Drawing.Font("Segoe Print", 10F);
-            label7.ForeColor = System.Drawing.SystemColors.Control;
-            label7.Location = new System.Drawing.Point(710, 292);
-            label7.Name = "label7";
-            label7.Size = new System.Drawing.Size(96, 24);
-            label7.TabIndex = 65;
-            label7.Text = "Должность";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
-            label8.Font = new System.Drawing.Font("Segoe Print", 10F);
-            label8.ForeColor = System.Drawing.SystemColors.Control;
-            label8.Location = new System.Drawing.Point(710, 174);
-            label8.Name = "label8";
-            label8.Size = new System.Drawing.Size(81, 24);
-            label8.TabIndex = 66;
-            label8.Text = "Фамилия ";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
-            label11.Font = new System.Drawing.Font("Segoe Print", 10F);
-            label11.ForeColor = System.Drawing.SystemColors.Control;
-            label11.Location = new System.Drawing.Point(710, 215);
-            label11.Name = "label11";
-            label11.Size = new System.Drawing.Size(48, 24);
-            label11.TabIndex = 67;
-            label11.Text = "Имя ";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
-            label12.Font = new System.Drawing.Font("Segoe Print", 10F);
-            label12.ForeColor = System.Drawing.SystemColors.Control;
-            label12.Location = new System.Drawing.Point(710, 251);
-            label12.Name = "label12";
-            label12.Size = new System.Drawing.Size(88, 24);
-            label12.TabIndex = 68;
-            label12.Text = "Отчество";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
-            label13.Font = new System.Drawing.Font("Segoe Print", 10F);
-            label13.ForeColor = System.Drawing.SystemColors.Control;
-            label13.Location = new System.Drawing.Point(710, 330);
-            label13.Name = "label13";
-            label13.Size = new System.Drawing.Size(70, 24);
-            label13.TabIndex = 69;
-            label13.Text = "Телефон\r\n";
-            // 
-            // buttonDoctor
-            // 
-            this.buttonDoctor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
-            this.buttonDoctor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDoctor.FlatAppearance.BorderSize = 0;
-            this.buttonDoctor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(92)))), ((int)(((byte)(88)))));
-            this.buttonDoctor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(135)))), ((int)(((byte)(129)))));
-            this.buttonDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDoctor.Font = new System.Drawing.Font("Segoe Print", 8F);
-            this.buttonDoctor.Location = new System.Drawing.Point(900, 376);
-            this.buttonDoctor.Name = "buttonDoctor";
-            this.buttonDoctor.Size = new System.Drawing.Size(95, 25);
-            this.buttonDoctor.TabIndex = 70;
-            this.buttonDoctor.Text = "Сохранить";
-            this.buttonDoctor.UseVisualStyleBackColor = false;
-            this.buttonDoctor.Click += new System.EventHandler(this.buttonDoctor_Click);
+            this.medicalFileTableAdapter.ClearBeforeFill = true;
             // 
             // MecicalFilesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1338, 809);
+            this.ClientSize = new System.Drawing.Size(1071, 574);
             this.Controls.Add(this.patientBindingNavigator);
             this.Controls.Add(this.panel2);
             this.Name = "MecicalFilesForm";
-            this.Text = "MecicalFilesForm";
+            this.Text = "Заполнение данных";
             this.Load += new System.EventHandler(this.MecicalFilesForm_Load);
             this.Controls.SetChildIndex(this.panel2, 0);
             this.Controls.SetChildIndex(this.patientBindingNavigator, 0);
@@ -809,10 +821,11 @@ namespace Dementia
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPatient)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.doctorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.analyzesBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.doctorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicalFileBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -867,5 +880,7 @@ namespace Dementia
         private System.Windows.Forms.TextBox othernameTextBox1;
         private System.Windows.Forms.TextBox nameTextBox2;
         private System.Windows.Forms.TextBox surnameTextBox1;
+        private System.Windows.Forms.BindingSource medicalFileBindingSource;
+        private DementiaDataSetTableAdapters.MedicalFileTableAdapter medicalFileTableAdapter;
     }
 }

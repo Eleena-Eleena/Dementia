@@ -88,6 +88,8 @@ namespace Dementia
 
         private void MecicalFilesForm_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "dementiaDataSet.MedicalFile". При необходимости она может быть перемещена или удалена.
+            this.medicalFileTableAdapter.Fill(this.dementiaDataSet.MedicalFile);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "dementiaDataSet.Doctor". При необходимости она может быть перемещена или удалена.
             this.doctorTableAdapter.Fill(this.dementiaDataSet.Doctor);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "dementiaDataSet.Analyzes". При необходимости она может быть перемещена или удалена.
