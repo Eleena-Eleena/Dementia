@@ -288,16 +288,16 @@ namespace Dementia
             {
                 sqlCommand.CommandType = CommandType.Text;
                 sqlCommand.Parameters.Add(new SqlParameter("@Surname", SqlDbType.NVarChar));
-                sqlCommand.Parameters["@Surname"].Value = surnameTextBox.Text;
+                sqlCommand.Parameters["@Surname"].Value = surnameTextBox1.Text;
 
                 sqlCommand.Parameters.Add(new SqlParameter("@Name", SqlDbType.NVarChar));
-                sqlCommand.Parameters["@Name"].Value = nameTextBox.Text;
+                sqlCommand.Parameters["@Name"].Value = nameTextBox2.Text;
 
                 sqlCommand.Parameters.Add(new SqlParameter("@Othername", SqlDbType.NVarChar));
-                sqlCommand.Parameters["@Othername"].Value = othernameTextBox.Text;
+                sqlCommand.Parameters["@Othername"].Value = othernameTextBox1.Text;
 
                 sqlCommand.Parameters.Add(new SqlParameter("@Position", SqlDbType.NVarChar));
-                sqlCommand.Parameters["@Position"].Value = addressTextBox.Text;
+                sqlCommand.Parameters["@Position"].Value = positionTextBox.Text;
 
                 sqlCommand.Parameters.Add(new SqlParameter("@NumberPhone", SqlDbType.Decimal));
                 sqlCommand.Parameters["@NumberPhone"].Value = numberPhoneTextBox.Text;

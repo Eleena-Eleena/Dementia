@@ -26,5 +26,19 @@ namespace Dementia
         {
             base.OnClosing(e);
         }
+
+        private void заполнениеДанныхToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MecicalFilesForm registerform = new MecicalFilesForm();
+            registerform.Show();
+        }
+
+        private void медицинскаяКартаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MFForm registerform = new MFForm();
+            registerform.Show();
+        }
     }
 }

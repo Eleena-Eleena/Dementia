@@ -33,6 +33,9 @@ namespace Dementia
             this.fToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.формыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.заполнениеДанныхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.медицинскаяКартаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.опекуныToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,10 +57,13 @@ namespace Dementia
             this.fToolStripMenuItem.Name = "fToolStripMenuItem";
             this.fToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
             this.fToolStripMenuItem.Text = "Files";
-
             // 
             // формыToolStripMenuItem
             // 
+            this.формыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.заполнениеДанныхToolStripMenuItem,
+            this.медицинскаяКартаToolStripMenuItem,
+            this.опекуныToolStripMenuItem});
             this.формыToolStripMenuItem.Name = "формыToolStripMenuItem";
             this.формыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.формыToolStripMenuItem.Text = "Формы";
@@ -68,6 +74,26 @@ namespace Dementia
             this.выходToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            // 
+            // заполнениеДанныхToolStripMenuItem
+            // 
+            this.заполнениеДанныхToolStripMenuItem.Name = "заполнениеДанныхToolStripMenuItem";
+            this.заполнениеДанныхToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.заполнениеДанныхToolStripMenuItem.Text = "Заполнение данных";
+            this.заполнениеДанныхToolStripMenuItem.Click += new System.EventHandler(this.заполнениеДанныхToolStripMenuItem_Click);
+            // 
+            // медицинскаяКартаToolStripMenuItem
+            // 
+            this.медицинскаяКартаToolStripMenuItem.Name = "медицинскаяКартаToolStripMenuItem";
+            this.медицинскаяКартаToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.медицинскаяКартаToolStripMenuItem.Text = "Медицинская карта";
+            this.медицинскаяКартаToolStripMenuItem.Click += new System.EventHandler(this.медицинскаяКартаToolStripMenuItem_Click);
+            // 
+            // опекуныToolStripMenuItem
+            // 
+            this.опекуныToolStripMenuItem.Name = "опекуныToolStripMenuItem";
+            this.опекуныToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.опекуныToolStripMenuItem.Text = "Опекуны";
             // 
             // BaseForm
             // 
@@ -91,5 +117,8 @@ namespace Dementia
         private System.Windows.Forms.ToolStripMenuItem fToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem формыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem заполнениеДанныхToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem медицинскаяКартаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem опекуныToolStripMenuItem;
     }
 }

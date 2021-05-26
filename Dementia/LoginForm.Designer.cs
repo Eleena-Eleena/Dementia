@@ -102,7 +102,7 @@ namespace Dementia
             this.PassField.Size = new System.Drawing.Size(270, 29);
             this.PassField.TabIndex = 4;
             this.PassField.UseSystemPasswordChar = true;
-            this.PassField.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+
             // 
             // label4
             // 
@@ -114,7 +114,7 @@ namespace Dementia
             this.label4.Size = new System.Drawing.Size(71, 28);
             this.label4.TabIndex = 3;
             this.label4.Text = "Пароль";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+
             // 
             // LoginField
             // 
@@ -136,7 +136,7 @@ namespace Dementia
             this.label3.Size = new System.Drawing.Size(62, 28);
             this.label3.TabIndex = 1;
             this.label3.Text = "Логин";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+
             // 
             // panel2
             // 
@@ -159,7 +159,7 @@ namespace Dementia
             this.label1.TabIndex = 0;
             this.label1.Text = "Авторизация";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+
             // 
             // LoginForm
             // 

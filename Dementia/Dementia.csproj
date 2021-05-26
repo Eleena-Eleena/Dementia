@@ -75,6 +75,7 @@
     <Compile Include="MFForm.Designer.cs">
       <DependentUpon>MFForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\MFDto.cs" />
     <Compile Include="Models\PatientDto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

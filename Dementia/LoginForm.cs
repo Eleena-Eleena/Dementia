@@ -18,31 +18,7 @@ namespace Dementia
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+ 
         private void LoginButton_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(LoginField.Text))
@@ -58,7 +34,6 @@ namespace Dementia
             string ConnStr = @"Data Source=eleena\sqlexpress;Initial Catalog=Dementia;Integrated Security=True";
             SqlConnection dbConnection = new SqlConnection(ConnStr);
             dbConnection.Open();
-
 
             bool success = false;
             try
@@ -83,11 +58,17 @@ namespace Dementia
             if (success)
             {
                 MessageBox.Show("Все верно.");
+                this.Hide();
+                MecicalFilesForm registerform = new MecicalFilesForm();
+                registerform.Show();
             }
             else
             {
                 MessageBox.Show("Неверный логин или пароль.");
             }
+
+                
+            
         }
 
         private void RegisterButton_Click(object sender, EventArgs e)
