@@ -17,6 +17,7 @@ namespace Dementia
         private string sqlPatient = "USE [Dementia] SELECT * FROM [dbo].Patient";
         private string sqlInsertPatient = "USE [Dementia] INSERT INTO [dbo].[Patient]([Surname],[Name],[Othername],[NumberPhone],[NumberPassport],[Address])VALUES(@Surname,@Name,@Othername,@NumberPhone,@NumberPassport,@Address)";
         private string sqlInsertAna = "USE [Dementia] INSERT INTO [dbo].[Analyzes]([IdPatient],[Name],[Result],[Date]) VALUES(@IdPatient,@Name,@Result,@Date)";
+        private string sqlInsertDoctor = "USE [Dementia] INSERT INTO [dbo].[Doctor]([Surname],[Name],[Othername],[Position],[NumberPhone])VALUES(@Surname,@Name,@Othername,@Position,@NumberPhone)";
 
         public int IdPatient;
 
@@ -87,6 +88,8 @@ namespace Dementia
 
         private void MecicalFilesForm_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "dementiaDataSet.Doctor". При необходимости она может быть перемещена или удалена.
+            this.doctorTableAdapter.Fill(this.dementiaDataSet.Doctor);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "dementiaDataSet.Analyzes". При необходимости она может быть перемещена или удалена.
             this.analyzesTableAdapter.Fill(this.dementiaDataSet.Analyzes);
             listPatient = GetPatient();
@@ -246,6 +249,73 @@ namespace Dementia
             }
 
 
+        }
+
+        private void buttonDoctor_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(surnameTextBox.Text))
+            {
+                MessageBox.Show("Введите фамилию.");
+                return;
+            }
+            if (string.IsNullOrEmpty(nameTextBox.Text))
+            {
+                MessageBox.Show("Введите имя.");
+                return;
+            }
+            if (string.IsNullOrEmpty(othernameTextBox.Text))
+            {
+                MessageBox.Show("Введите отчество.");
+                return;
+            }
+            if (string.IsNullOrEmpty(numberPhoneTextBox1.Text))
+            {
+                MessageBox.Show("Введите номер телефона.");
+                return;
+            }
+            if (string.IsNullOrEmpty(positionTextBox.Text))
+            {
+                MessageBox.Show("Введите должность.");
+                return;
+            }
+           
+            string ConnStr = @"Data Source=eleena\sqlexpress;Initial Catalog=Dementia;Integrated Security=True";
+            SqlConnection dbConnection = new SqlConnection(ConnStr);
+
+            using (SqlCommand sqlCommand = new SqlCommand(sqlInsertDoctor, dbConnection))
+            {
+                sqlCommand.CommandType = CommandType.Text;
+                sqlCommand.Parameters.Add(new SqlParameter("@Surname", SqlDbType.NVarChar));
+                sqlCommand.Parameters["@Surname"].Value = surnameTextBox.Text;
+
+                sqlCommand.Parameters.Add(new SqlParameter("@Name", SqlDbType.NVarChar));
+                sqlCommand.Parameters["@Name"].Value = nameTextBox.Text;
+
+                sqlCommand.Parameters.Add(new SqlParameter("@Othername", SqlDbType.NVarChar));
+                sqlCommand.Parameters["@Othername"].Value = othernameTextBox.Text;
+
+                sqlCommand.Parameters.Add(new SqlParameter("@Position", SqlDbType.NVarChar));
+                sqlCommand.Parameters["@Position"].Value = addressTextBox.Text;
+
+                sqlCommand.Parameters.Add(new SqlParameter("@NumberPhone", SqlDbType.Decimal));
+                sqlCommand.Parameters["@NumberPhone"].Value = numberPhoneTextBox.Text;
+
+                try
+                {
+                    dbConnection.Open();
+                    var t = sqlCommand.ExecuteScalar();
+                    MessageBox.Show("Запись сохранена.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Запись не сохранена.");
+                }
+                finally
+                {
+                    dbConnection.Close();
+                }
+            }
         }
     }
 }
