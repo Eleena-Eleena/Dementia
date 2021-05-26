@@ -16,7 +16,7 @@ namespace Dementia
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MecicalFilesForm());
+            Application.Run(new MFForm());
         }
     }
 }

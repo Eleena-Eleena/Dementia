@@ -554,6 +554,7 @@ namespace Dementia
             this.textBoxCurrentPatient.Name = "textBoxCurrentPatient";
             this.textBoxCurrentPatient.Size = new System.Drawing.Size(299, 22);
             this.textBoxCurrentPatient.TabIndex = 15;
+            this.textBoxCurrentPatient.TextChanged += new System.EventHandler(this.textBoxCurrentPatient_TextChanged);
             // 
             // label1
             // 
@@ -776,7 +777,7 @@ namespace Dementia
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.label9.Location = new System.Drawing.Point(392, 40);
+            this.label9.Location = new System.Drawing.Point(363, 36);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(342, 57);
             this.label9.TabIndex = 1;

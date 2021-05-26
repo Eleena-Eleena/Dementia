@@ -319,5 +319,10 @@ namespace Dementia
                 }
             }
         }
+
+        private void textBoxCurrentPatient_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
