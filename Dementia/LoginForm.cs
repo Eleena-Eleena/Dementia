@@ -59,7 +59,7 @@ namespace Dementia
             {
                 MessageBox.Show("Все верно.");
                 this.Hide();
-                MecicalFilesForm registerform = new MecicalFilesForm();
+                PatientForm registerform = new PatientForm();
                 registerform.Show();
             }
             else

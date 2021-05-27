@@ -30,17 +30,30 @@ namespace Dementia
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.medicalFileBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.ButtonPatient = new System.Windows.Forms.Button();
+            this.idAnalyzesTextBox = new System.Windows.Forms.TextBox();
+            this.medicalFileBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.dementiaDataSet = new Dementia.DementiaDataSet();
+            this.idDoctorTextBox = new System.Windows.Forms.TextBox();
+            this.idPatientTextBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.idMedicalFileDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPatientDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDoctorDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idAnalyzesDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.medicalFileBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.medicalFileBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dementiaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,6 +64,7 @@ namespace Dementia
             this.resultDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.analyzesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dementiaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.idDoctorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.surnameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,34 +84,28 @@ namespace Dementia
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label10 = new System.Windows.Forms.Label();
+            this.medicalFileBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.medicalFileBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.medicalFileBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.medicalFileTableAdapter = new Dementia.DementiaDataSetTableAdapters.MedicalFileTableAdapter();
             this.tableAdapterManager = new Dementia.DementiaDataSetTableAdapters.TableAdapterManager();
             this.patientTableAdapter = new Dementia.DementiaDataSetTableAdapters.PatientTableAdapter();
             this.doctorTableAdapter = new Dementia.DementiaDataSetTableAdapters.DoctorTableAdapter();
             this.analyzesTableAdapter = new Dementia.DementiaDataSetTableAdapters.AnalyzesTableAdapter();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.idPatientTextBox = new System.Windows.Forms.TextBox();
-            this.idDoctorTextBox = new System.Windows.Forms.TextBox();
-            this.idAnalyzesTextBox = new System.Windows.Forms.TextBox();
-            this.ButtonPatient = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.medicalFileBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicalFileBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dementiaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicalFileBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicalFileBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dementiaDataSetBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.analyzesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dementiaDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.doctorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicalFileBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicalFileBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicalFileBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,20 +134,128 @@ namespace Dementia
             this.panel1.Size = new System.Drawing.Size(1394, 695);
             this.panel1.TabIndex = 0;
             // 
-            // medicalFileBindingSource3
+            // ButtonPatient
             // 
-            this.medicalFileBindingSource3.DataMember = "MedicalFile";
-            this.medicalFileBindingSource3.DataSource = this.dementiaDataSet;
+            this.ButtonPatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            this.ButtonPatient.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonPatient.FlatAppearance.BorderSize = 0;
+            this.ButtonPatient.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(92)))), ((int)(((byte)(88)))));
+            this.ButtonPatient.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(135)))), ((int)(((byte)(129)))));
+            this.ButtonPatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonPatient.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ButtonPatient.Location = new System.Drawing.Point(1197, 152);
+            this.ButtonPatient.Name = "ButtonPatient";
+            this.ButtonPatient.Size = new System.Drawing.Size(104, 89);
+            this.ButtonPatient.TabIndex = 65;
+            this.ButtonPatient.Text = "Сохранить";
+            this.ButtonPatient.UseVisualStyleBackColor = false;
+            this.ButtonPatient.Click += new System.EventHandler(this.ButtonPatient_Click);
+            // 
+            // idAnalyzesTextBox
+            // 
+            this.idAnalyzesTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            this.idAnalyzesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicalFileBindingSource2, "IdAnalyzes", true));
+            this.idAnalyzesTextBox.Font = new System.Drawing.Font("Times New Roman", 9.75F);
+            this.idAnalyzesTextBox.Location = new System.Drawing.Point(1052, 187);
+            this.idAnalyzesTextBox.Name = "idAnalyzesTextBox";
+            this.idAnalyzesTextBox.Size = new System.Drawing.Size(56, 22);
+            this.idAnalyzesTextBox.TabIndex = 63;
+            // 
+            // medicalFileBindingSource2
+            // 
+            this.medicalFileBindingSource2.DataMember = "MedicalFile";
+            this.medicalFileBindingSource2.DataSource = this.dementiaDataSet;
             // 
             // dementiaDataSet
             // 
             this.dementiaDataSet.DataSetName = "DementiaDataSet";
             this.dementiaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // idDoctorTextBox
+            // 
+            this.idDoctorTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            this.idDoctorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicalFileBindingSource2, "IdDoctor", true));
+            this.idDoctorTextBox.Font = new System.Drawing.Font("Times New Roman", 9.75F);
+            this.idDoctorTextBox.Location = new System.Drawing.Point(1052, 232);
+            this.idDoctorTextBox.Name = "idDoctorTextBox";
+            this.idDoctorTextBox.Size = new System.Drawing.Size(56, 22);
+            this.idDoctorTextBox.TabIndex = 62;
+            // 
+            // idPatientTextBox
+            // 
+            this.idPatientTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            this.idPatientTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicalFileBindingSource2, "IdPatient", true));
+            this.idPatientTextBox.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.idPatientTextBox.Location = new System.Drawing.Point(1054, 143);
+            this.idPatientTextBox.Name = "idPatientTextBox";
+            this.idPatientTextBox.Size = new System.Drawing.Size(54, 22);
+            this.idPatientTextBox.TabIndex = 61;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
+            this.label6.Font = new System.Drawing.Font("Segoe Print", 10F);
+            this.label6.ForeColor = System.Drawing.SystemColors.Control;
+            this.label6.Location = new System.Drawing.Point(915, 230);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(84, 24);
+            this.label6.TabIndex = 60;
+            this.label6.Text = "Код врача";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
+            this.label5.Font = new System.Drawing.Font("Segoe Print", 10F);
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(915, 184);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 24);
+            this.label5.TabIndex = 59;
+            this.label5.Text = "Код анализа";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
+            this.label4.Font = new System.Drawing.Font("Segoe Print", 10F);
+            this.label4.ForeColor = System.Drawing.SystemColors.Control;
+            this.label4.Location = new System.Drawing.Point(915, 141);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(115, 24);
+            this.label4.TabIndex = 58;
+            this.label4.Text = "Код пациента";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
+            this.label3.Font = new System.Drawing.Font("Segoe Print", 14F);
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(964, 95);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(374, 33);
+            this.label3.TabIndex = 57;
+            this.label3.Text = "Ввод данных в медицинскую книжку";
+            // 
             // dataGridView4
             // 
             this.dataGridView4.AutoGenerateColumns = false;
+            this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idMedicalFileDataGridViewTextBoxColumn,
@@ -147,11 +263,18 @@ namespace Dementia
             this.idDoctorDataGridViewTextBoxColumn1,
             this.idAnalyzesDataGridViewTextBoxColumn1});
             this.dataGridView4.DataSource = this.medicalFileBindingSource2;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView4.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView4.Location = new System.Drawing.Point(919, 280);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.Size = new System.Drawing.Size(451, 395);
             this.dataGridView4.TabIndex = 56;
-
             // 
             // idMedicalFileDataGridViewTextBoxColumn
             // 
@@ -177,21 +300,6 @@ namespace Dementia
             this.idAnalyzesDataGridViewTextBoxColumn1.DataPropertyName = "IdAnalyzes";
             this.idAnalyzesDataGridViewTextBoxColumn1.HeaderText = "IdAnalyzes";
             this.idAnalyzesDataGridViewTextBoxColumn1.Name = "idAnalyzesDataGridViewTextBoxColumn1";
-            // 
-            // medicalFileBindingSource2
-            // 
-            this.medicalFileBindingSource2.DataMember = "MedicalFile";
-            this.medicalFileBindingSource2.DataSource = this.dementiaDataSet;
-            // 
-            // medicalFileBindingSource1
-            // 
-            this.medicalFileBindingSource1.DataMember = "MedicalFile";
-            this.medicalFileBindingSource1.DataSource = this.dementiaDataSetBindingSource;
-            // 
-            // dementiaDataSetBindingSource
-            // 
-            this.dementiaDataSetBindingSource.DataSource = this.dementiaDataSet;
-            this.dementiaDataSetBindingSource.Position = 0;
             // 
             // panel2
             // 
@@ -232,7 +340,16 @@ namespace Dementia
             // 
             this.dataGridView3.AllowUserToAddRows = false;
             this.dataGridView3.AutoGenerateColumns = false;
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idAnalyzesDataGridViewTextBoxColumn,
@@ -241,6 +358,14 @@ namespace Dementia
             this.resultDataGridViewTextBoxColumn,
             this.dateDataGridViewTextBoxColumn});
             this.dataGridView3.DataSource = this.analyzesBindingSource;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView3.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView3.Location = new System.Drawing.Point(26, 333);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(839, 150);
@@ -281,13 +406,26 @@ namespace Dementia
             // 
             this.analyzesBindingSource.DataMember = "Analyzes";
             this.analyzesBindingSource.DataSource = this.dementiaDataSetBindingSource;
-
+            // 
+            // dementiaDataSetBindingSource
+            // 
+            this.dementiaDataSetBindingSource.DataSource = this.dementiaDataSet;
+            this.dementiaDataSetBindingSource.Position = 0;
             // 
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDoctorDataGridViewTextBoxColumn,
@@ -297,6 +435,14 @@ namespace Dementia
             this.positionDataGridViewTextBoxColumn,
             this.numberPhoneDataGridViewTextBoxColumn1});
             this.dataGridView2.DataSource = this.doctorBindingSource;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView2.Location = new System.Drawing.Point(26, 525);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(839, 150);
@@ -361,7 +507,16 @@ namespace Dementia
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(57)))), ((int)(((byte)(55)))));
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idPatientDataGridViewTextBoxColumn,
@@ -372,11 +527,18 @@ namespace Dementia
             this.numberPassportDataGridViewTextBoxColumn,
             this.addressDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.patientBindingSource;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.Location = new System.Drawing.Point(26, 129);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(839, 155);
             this.dataGridView1.TabIndex = 19;
-
             // 
             // idPatientDataGridViewTextBoxColumn
             // 
@@ -439,6 +601,16 @@ namespace Dementia
             this.label10.TabIndex = 17;
             this.label10.Text = "Пациенты";
             // 
+            // medicalFileBindingSource3
+            // 
+            this.medicalFileBindingSource3.DataMember = "MedicalFile";
+            this.medicalFileBindingSource3.DataSource = this.dementiaDataSet;
+            // 
+            // medicalFileBindingSource1
+            // 
+            this.medicalFileBindingSource1.DataMember = "MedicalFile";
+            this.medicalFileBindingSource1.DataSource = this.dementiaDataSetBindingSource;
+            // 
             // medicalFileBindingSource
             // 
             this.medicalFileBindingSource.DataMember = "MedicalFile";
@@ -471,105 +643,6 @@ namespace Dementia
             // 
             this.analyzesTableAdapter.ClearBeforeFill = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
-            this.label3.Font = new System.Drawing.Font("Segoe Print", 14F);
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(964, 95);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(374, 33);
-            this.label3.TabIndex = 57;
-            this.label3.Text = "Ввод данных в медицинскую книжку";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
-            this.label4.Font = new System.Drawing.Font("Segoe Print", 10F);
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(915, 141);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(115, 24);
-            this.label4.TabIndex = 58;
-            this.label4.Text = "Код пациента";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
-            this.label5.Font = new System.Drawing.Font("Segoe Print", 10F);
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(915, 184);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 24);
-            this.label5.TabIndex = 59;
-            this.label5.Text = "Код анализа";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
-            this.label6.Font = new System.Drawing.Font("Segoe Print", 10F);
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(915, 230);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 24);
-            this.label6.TabIndex = 60;
-            this.label6.Text = "Код врача";
-            // 
-            // idPatientTextBox
-            // 
-            this.idPatientTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
-            this.idPatientTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicalFileBindingSource2, "IdPatient", true));
-            this.idPatientTextBox.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.idPatientTextBox.Location = new System.Drawing.Point(1054, 143);
-            this.idPatientTextBox.Name = "idPatientTextBox";
-            this.idPatientTextBox.Size = new System.Drawing.Size(54, 22);
-            this.idPatientTextBox.TabIndex = 61;
-            // 
-            // idDoctorTextBox
-            // 
-            this.idDoctorTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
-            this.idDoctorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicalFileBindingSource2, "IdDoctor", true));
-            this.idDoctorTextBox.Font = new System.Drawing.Font("Times New Roman", 9.75F);
-            this.idDoctorTextBox.Location = new System.Drawing.Point(1052, 184);
-            this.idDoctorTextBox.Name = "idDoctorTextBox";
-            this.idDoctorTextBox.Size = new System.Drawing.Size(56, 22);
-            this.idDoctorTextBox.TabIndex = 62;
-            // 
-            // idAnalyzesTextBox
-            // 
-            this.idAnalyzesTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
-            this.idAnalyzesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicalFileBindingSource2, "IdAnalyzes", true));
-            this.idAnalyzesTextBox.Font = new System.Drawing.Font("Times New Roman", 9.75F);
-            this.idAnalyzesTextBox.Location = new System.Drawing.Point(1052, 232);
-            this.idAnalyzesTextBox.Name = "idAnalyzesTextBox";
-            this.idAnalyzesTextBox.Size = new System.Drawing.Size(56, 22);
-            this.idAnalyzesTextBox.TabIndex = 63;
-            // 
-            // ButtonPatient
-            // 
-            this.ButtonPatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(197)))), ((int)(((byte)(189)))));
-            this.ButtonPatient.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonPatient.FlatAppearance.BorderSize = 0;
-            this.ButtonPatient.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(92)))), ((int)(((byte)(88)))));
-            this.ButtonPatient.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(135)))), ((int)(((byte)(129)))));
-            this.ButtonPatient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonPatient.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ButtonPatient.Location = new System.Drawing.Point(1197, 152);
-            this.ButtonPatient.Name = "ButtonPatient";
-            this.ButtonPatient.Size = new System.Drawing.Size(104, 89);
-            this.ButtonPatient.TabIndex = 65;
-            this.ButtonPatient.Text = "Сохранить";
-            this.ButtonPatient.UseVisualStyleBackColor = false;
-            this.ButtonPatient.Click += new System.EventHandler(this.ButtonPatient_Click);
-            // 
             // MFForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -578,24 +651,25 @@ namespace Dementia
             this.Controls.Add(this.panel1);
             this.Name = "MFForm";
             this.Text = "Заполнение медицинской книжки";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MFForm_FormClosed);
             this.Load += new System.EventHandler(this.MFForm_Load);
             this.Controls.SetChildIndex(this.panel1, 0);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.medicalFileBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicalFileBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dementiaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicalFileBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicalFileBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dementiaDataSetBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.analyzesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dementiaDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.doctorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicalFileBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicalFileBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicalFileBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

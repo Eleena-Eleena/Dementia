@@ -29,15 +29,41 @@ namespace Dementia
 
         private void заполнениеДанныхToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MecicalFilesForm registerform = new MecicalFilesForm();
-            registerform.Show();
+           
         }
 
         private void медицинскаяКартаToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
             MFForm registerform = new MFForm();
+            registerform.Show();
+        }
+
+        private void опекуныToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TutorForm registerform = new TutorForm();
+            registerform.Show();
+        }
+
+        private void пациентToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PatientForm registerform = new PatientForm();
+            registerform.Show();
+        }
+
+        private void врачToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DoctorForm registerform = new DoctorForm();
+            registerform.Show();
+        }
+
+        private void анализToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AnalyzeForm registerform = new AnalyzeForm();
             registerform.Show();
         }
     }

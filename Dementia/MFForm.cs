@@ -115,11 +115,13 @@ namespace Dementia
                 sqlCommand.Parameters.Add(new SqlParameter("@IdPatient", SqlDbType.Int));
                 sqlCommand.Parameters["@IdPatient"].Value = idPatientTextBox.Text;
 
+                sqlCommand.Parameters.Add(new SqlParameter("@IdDoctor", SqlDbType.Int));
+                sqlCommand.Parameters["@IdDoctor"].Value = idDoctorTextBox.Text;
+
                 sqlCommand.Parameters.Add(new SqlParameter("@IdAnalyzes", SqlDbType.Int));
                 sqlCommand.Parameters["@IdAnalyzes"].Value = idAnalyzesTextBox.Text;
 
-                sqlCommand.Parameters.Add(new SqlParameter("@IdDoctor", SqlDbType.Int));
-                sqlCommand.Parameters["@IdDoctor"].Value = idDoctorTextBox.Text;
+               
 
                 try
                 {
@@ -137,6 +139,11 @@ namespace Dementia
                     dbConnection.Close();
                 }
             }
+        }
+
+        private void MFForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
