@@ -61,8 +61,17 @@ namespace Dementia
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.patientBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.patientDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.analyzesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.analyzesDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.surnameTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.othernameTextBox = new System.Windows.Forms.TextBox();
@@ -72,15 +81,6 @@ namespace Dementia
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             label1 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
@@ -379,6 +379,42 @@ namespace Dementia
             this.patientDataGridView.Size = new System.Drawing.Size(731, 190);
             this.patientDataGridView.TabIndex = 1;
             // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Surname";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Surname";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Othername";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Othername";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "NumberPhone";
+            this.dataGridViewTextBoxColumn5.HeaderText = "NumberPhone";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "NumberPassport";
+            this.dataGridViewTextBoxColumn6.HeaderText = "NumberPassport";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Address";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Address";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
             // analyzesBindingSource
             // 
             this.analyzesBindingSource.DataMember = "FK_Analyzes_Patient";
@@ -387,7 +423,6 @@ namespace Dementia
             // analyzesDataGridView
             // 
             this.analyzesDataGridView.AllowUserToAddRows = false;
-            this.analyzesDataGridView.AllowUserToDeleteRows = false;
             this.analyzesDataGridView.AutoGenerateColumns = false;
             this.analyzesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.analyzesDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(106)))), ((int)(((byte)(95)))));
@@ -415,11 +450,28 @@ namespace Dementia
             this.analyzesDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
             this.analyzesDataGridView.Location = new System.Drawing.Point(350, 400);
             this.analyzesDataGridView.Name = "analyzesDataGridView";
-            this.analyzesDataGridView.ReadOnly = true;
             this.analyzesDataGridView.RowHeadersVisible = false;
             this.analyzesDataGridView.Size = new System.Drawing.Size(514, 138);
             this.analyzesDataGridView.TabIndex = 2;
             this.analyzesDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.analyzesDataGridView_CellContentClick);
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Result";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Result";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Date";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Date";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             // 
             // surnameTextBox
             // 
@@ -514,63 +566,6 @@ namespace Dementia
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1093, 526);
             this.panel2.TabIndex = 61;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Surname";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Surname";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Othername";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Othername";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "NumberPhone";
-            this.dataGridViewTextBoxColumn5.HeaderText = "NumberPhone";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "NumberPassport";
-            this.dataGridViewTextBoxColumn6.HeaderText = "NumberPassport";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Address";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Address";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Result";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Result";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Date";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Date";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
             // 
             // PatientForm
             // 
